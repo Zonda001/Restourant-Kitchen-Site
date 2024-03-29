@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Rules - My Restaurant{% endblock %}
+
+{% block content %}
+   <h2>Create Rules</h2>
+   <form method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+     {{ form.as_p }}
+     <button type="submit">Create Rules</button>
+   </form>
+{% endblock %}

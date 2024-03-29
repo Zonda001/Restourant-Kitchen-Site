@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Rules - My Restaurant{% endblock %}
+
+{% block header %}Rules{% endblock %}
+
+{% block content %}
+    <h2>List of Rules</h2>
+        <nav>
+            <span class="nav">
+                <a href="{% url 'create_rule' %}">Create New Rule</a>
+            </span>
+    </nav>
+    {% for rule in rules %}
+        <div>{{ rule }}</div>
+        <div class="column-rule">{{ rule.description }}</div>
+    {% endfor %}
+{% endblock %}

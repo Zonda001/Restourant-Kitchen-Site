@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <nav>
+            <span class="nav">
+                <a href="{% url 'create_dish' %}">Create New Dish</a>
+            </span>
+    </nav>
+    <nav>
+    <span class="nav">
+        <a href="{% url 'rules_list' %}">Rules</a>
+    </span>
+
+<h2>Dish List</h2>
+
+{% if dishes %}
+    {% for dish in dishes %}
+      <div class="column">{{ dish.name }}
+      <li>{{ dish.price }}</li>
+      <div class="column-content">{{ dish.description }}</div>
+    </div>
+    {% endfor %}
+
+{% else %}
+  <p>No dishes available.</p>
+{% endif %}
+{% endblock %}
