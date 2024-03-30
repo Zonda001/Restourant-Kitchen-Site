@@ -1,11 +1,9 @@
-from django.urls import path, include
-from .views import dish_list, create_dish
-from Restourant import views
-
+from django.urls import path
+from .views import CreateDishView, DishListView, RulesListView, CreateRulesView
 
 urlpatterns = [
-    path('create_dish/', create_dish, name='create_dish'),
-    path('', views.dish_list, name='dish_list'),
-    path('rules/', views.rules_list, name='rules_list'),
-    path('create_rule/', views.create_rules, name='create_rule'),
+    path('create_dish/', CreateDishView.as_view(), name='create_dish'),
+    path('', DishListView.as_view(), name='dish_list'),
+    path('rules/', RulesListView.as_view(), name='rules_list'),
+    path('create_rule/', CreateRulesView.as_view(), name='create_rule'),
 ]
