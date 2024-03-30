@@ -1,15 +1,15 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
 
     <nav>
             <span class="nav">
-                <a href="{% url 'create_dish' %}">Create New Dish</a>
+                <a href="{% url "create_dish" %}">Create New Dish</a>
             </span>
     </nav>
     <nav>
     <span class="nav">
-        <a href="{% url 'rules_list' %}">Rules</a>
+        <a href="{% url "rules_list" %}">Rules</a>
     </span>
 
 <h2>Dish List</h2>

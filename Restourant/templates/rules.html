@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block title %}Rules - My Restaurant{% endblock %}
 
@@ -8,7 +8,7 @@
     <h2>List of Rules</h2>
         <nav>
             <span class="nav">
-                <a href="{% url 'create_rule' %}">Create New Rule</a>
+                <a href="{% url "create_rule" %}">Create New Rule</a>
             </span>
     </nav>
     {% for rule in rules %}

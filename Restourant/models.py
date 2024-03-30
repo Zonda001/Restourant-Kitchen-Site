@@ -20,8 +20,8 @@ class Cooker(AbstractBaseUser):
     is_active = models.BooleanField(default=True)
     date_joined = models.DateTimeField(auto_now_add=True)
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["first_name", "last_name"]
 
     objects = CustomUserManager()
 
@@ -38,8 +38,8 @@ class Dish(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    dish_type = models.ForeignKey(DishType, on_delete=models.CASCADE)
-    cooks = models.ManyToManyField(Cooker)
+    dish_type = models.ForeignKey(DishType, on_delete=models.CASCADE, related_name="dishes")
+    cooks = models.ManyToManyField(Cooker, related_name="dishes")
 
     def __str__(self):
         return self.name
