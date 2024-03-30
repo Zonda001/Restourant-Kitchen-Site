@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from Restourant.models import Dish, Cooker, DishType, Rules
+from Restourant.models import Dish, Cooker, DishType, Rule
 
 admin.site.register(Dish)
 admin.site.register(Cooker)
 admin.site.register(DishType)
-admin.site.register(Rules)
+admin.site.register(Rule)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

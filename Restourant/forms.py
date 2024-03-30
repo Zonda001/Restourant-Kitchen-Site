@@ -1,5 +1,5 @@
 from django import forms
-from .models import Dish, Rules
+from .models import Dish, Rule
 
 class DishForm(forms.ModelForm):
     class Meta:
@@ -8,5 +8,5 @@ class DishForm(forms.ModelForm):
 
 class RuleForm(forms.ModelForm):
     class Meta:
-        model = Rules
+        model = Rule
         fields = ["name", "description"]

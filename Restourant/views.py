@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 from django.views import View
-from .models import Dish, DishType, Cooker, Rules
+from .models import Dish, DishType, Cooker, Rule
 from .forms import DishForm, RuleForm
 
 class CreateDishView(View):
@@ -23,7 +23,7 @@ class DishListView(View):
 
 class RulesListView(View):
     def get(self, request):
-        rules = Rules.objects.all()
+        rules = Rule.objects.all()
         return render(request, "rules.html", {"rules": rules})
 
 class CreateRulesView(View):
