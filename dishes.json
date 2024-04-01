@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Napoleon",
+        "description": "A classic French dessert made of puff pastry, cream, and fruit",
+        "price": 25.50,
+        "dish_type": {
+            "name": "Desserts"
+        },
+        "cooks": [
+            {
+                "name": "John Doe",
+                "years_of_experience": 10,
+                "username": "johndoe",
+                "email": "johndoe@example.com",
+                "password": "password123",
+                "first_name": "John",
+                "last_name": "Doe"
+            }
+        ]
+    },
+    {
+        "name": "Varenyky",
+        "description": "A traditional Ukrainian dish consisting of boiled dough filled with potatoes, cheese, or meat",
+        "price": 12.00,
+        "dish_type": {
+            "name": "Pasta"
+        },
+        "cooks": [
+            {
+                "name": "Mary Smith",
+                "years_of_experience": 5,
+                "username": "marysmith",
+                "email": "marysmith@example.com",
+                "password": "password345",
+                "first_name": "Mary",
+                "last_name": "Smith"
+            }
+        ]
+    },
+    {
+        "name": "Tomato Soup",
+        "description": "A warm and comforting soup made from tomatoes, vegetables, and spices",
+        "price": 8.50,
+        "dish_type": {
+            "name": "Soups"
+        },
+        "cooks": [
+            {
+                "name": "James Johnson",
+                "years_of_experience": 8,
+                "username": "jamesjohnson",
+                "email": "jamesjohnson@example.com",
+                "password": "password567",
+                "first_name": "James",
+                "last_name": "Johnson"
+            }
+        ]
+    },
+    {
+        "name": "Braai Brotjie",
+        "description": "A traditional South African dish of bread rolls filled with grilled meat, onions, and peppers",
+        "price": 15.00,
+        "dish_type": {
+            "name": "Braai"
+        },
+        "cooks": [
+            {
+                "name": "Emily Davis",
+                "years_of_experience": 7,
+                "username": "emilydavis",
+                "email": "emilydavis@example.com",
+                "password": "password789",
+                "first_name": "Emily",
+                "last_name": "Davis"
+            }
+        ]
+    },
+    {
+        "name": "Butter Biscuits",
+        "description": "A classic and simple biscuit recipe that's perfect for any occasion",
+        "price": 5.00,
+        "dish_type": {
+            "name": "Biscuits"
+        },
+        "cooks": [
+            {
+                "name": "Michael Brown",
+                "years_of_experience": 6,
+                "username": "michaelbrown",
+                "email": "michaelbrown@example.com",
+                "password": "password901",
+                "first_name": "Michael",
+                "last_name": "Brown"
+            }
+        ]
+    }
+]
