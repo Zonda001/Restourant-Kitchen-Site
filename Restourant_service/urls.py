@@ -25,5 +25,5 @@ admin.site.register(Rule)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('restourant/', include('Restourant.urls')),
+    path('', include('Restourant.urls')),
 ]
