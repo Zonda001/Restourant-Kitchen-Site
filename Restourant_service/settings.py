@@ -33,7 +33,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY'] = secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "https://restourant-kitchen-site.onrender.com"]
 
 
 # Application definition
