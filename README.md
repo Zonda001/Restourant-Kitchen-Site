@@ -15,3 +15,8 @@ Communication: Clear and effective communication between team members.
 Cleanliness: Maintaining a clean and organized workspace.
 Teamwork: Collaboration and support among kitchen staff.
 Respect: Treating colleagues with respect and professionalism.
+
+Superuser
+
+login: user2505
+password: aboba
