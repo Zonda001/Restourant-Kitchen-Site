@@ -17,7 +17,7 @@
 {% if dishes %}
     {% for dish in dishes %}
       <div class="column">{{ dish.name }}
-      <li>{{ dish.price }}</li>
+      <li>${{ dish.price }}</li>
       <div class="column-content">{{ dish.description }}</div>
     </div>
     {% endfor %}
