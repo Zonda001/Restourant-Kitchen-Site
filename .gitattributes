@@ -1,3 +1,0 @@
-# Django admin assets committed by collectstatic — not project code.
-# Excluded from language stats so the repo reads as the Django project it is.
-staticfiles/** linguist-vendored
