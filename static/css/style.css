@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      font-family: "Beth Ellen";
+      font-weight: 400;  
+      margin: 0;
+      color: rgb(105, 30, 30);
+}
+  
+body {
+      background: linear-gradient(to bottom, rgba(255, 153, 153, 1), rgb(160, 60, 60));
+      padding: 0;
+      background-attachment: fixed;
+}
+  
+li {
+      font-size: 10px;
+      font-family: cursive;
+}
+  
+.column {
+      float: left;
+      width: 30%;
+      padding: 10px;
+      text-align: left;
+      font-family: cursive;
+      font-size: 20px;
+      min-height: calc(80vh - 80px);
+      overflow-y: auto;
+}
+  
+h2 {
+      text-align: left;
+      font-family: "Beth Ellen";
+      font-size: 30px;
+      font-weight: 350;
+      margin: 0;
+}
+  
+.column-content {
+      overflow-y: auto;
+      height: 500px;
+      margin-bottom: 20px;
+      font-family:cursive;
+      background-color: rgb(150, 162, 214);
+      padding: 10px;
+      border-radius: 10px;
+      scrollbar-width: thin;
+}
+  
+  .nav {
+      font-size: 30px;
+      font-family: "dosis";
+      text-align: center;
+      background-color: rgb(121, 51, 51);
+      border-radius: 8px;
+      margin: 10px;
+}
+  
+a {
+      text-decoration: none;
+      color: bisque;
+  
+}
+  
+p {
+      font-size: 25px;
+      font-family: "Dosis";
+}
+  
+.footer {
+      height: 80px; 
+      width: 80%;
+      position: sticky; 
+      bottom: 0; 
+      left: 0;
+      margin: 20px;
+}
+  
+input[type="text"], input[type="number"] {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+}
+  
+textarea[name="description"]  {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+}
+  
+select[name="dish_type"] {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+}
+  
+select[name="cooks"][required][id="id_cooks"][multiple] {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+}
+  
+button[type="submit"] {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+      font-size: 20px;
+      font-family: "Dosis";
+      color: rgb(48, 14, 14);
+}
+  
+.column-rule {
+      background-color: rgb(150, 162, 214);
+      border-radius: 10px;
+      font-family: cursive;
+      display: inline-block;
+      font-size: 20px;
+      padding: 8px;
+}
